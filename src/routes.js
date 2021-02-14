@@ -4,8 +4,9 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import ROUTES from './Components/constants/Routes';
 
 // importar componentes da página
-import Navbar from './Components/Navbar/Navbar'
-;import Footer from './Components/Footer/Footer';
+import Navbar from './Components/Navbar/Navbar';
+import Footer from './Components/Footer/Footer';
+import Bullet from './Components/Bullet/Bullet';
 
 // importar todos os componentes que serão roteados
 import Home from './Components/Home/Home';
@@ -21,6 +22,7 @@ const Routes = () => {
                 <Switch>
                     <Route path={ROUTES.HOME} exact component={Home} />
                 </Switch>
+                <Bullet name="ifood"/>
             </Router>
         </div>
     )
