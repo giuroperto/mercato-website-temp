@@ -1,0 +1,30 @@
+* {
+    --primary-colour: rgb(61, 61, 61);
+    --secondary-colour: rgb(199, 199, 199);
+}
+
+.navbar {
+    width: 100vw;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.logo {
+    padding-left: 4vw;
+    background-color: var(--primary-colour);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 7vh;
+    width: 100vw;
+}
+
+.logo img {
+    height: 5vh;
+}
+
+.logo h1 {
+    color: var(--secondary-colour);
+    margin-left: 2vw;
+    margin-bottom: 0;
+}
