@@ -4,38 +4,28 @@ import Routes from './routes';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 import './App.css';
+import { LinksContext } from './Contexts/LinksContext';
 
 const App = () => {
+
+
   return (
     <div className="App">
-      <Routes />
+      <LinksContext.Provider>
+        <Routes />
+      </LinksContext.Provider>
     </div>
   );
 
 
 
-//       <WineFiltersContext.Provider value={wineFilters}>
-//         <BeverageCategoryContext.Provider value={beverageCategory}>
-//           <MenuCategoryContext.Provider value={menuCategory}>
 //             <MenuFiltersContext.Provider value={menuFilters}>
 //               <Routes getWineFilters={getWineFilters} getBeverageCategory={getBeverageCategory} getMenuCategory={getMenuCategory} getMenuFilter={getMenuFilter} />
 //             </MenuFiltersContext.Provider>
-//           </MenuCategoryContext.Provider>
-//         </BeverageCategoryContext.Provider>
-//       </WineFiltersContext.Provider>
-//     </div>
 
 }
 
 export default App;
-
-
-
-// import './css/global.css';
-
-// import { WineFiltersContext, BeverageCategoryContext, MenuCategoryContext, MenuFiltersContext } from './Components/Contexts';
-
-// const App = () => {
 
 //   const [ wineFilters, setWineFilters ] = useState({
 //     tamanho: "",

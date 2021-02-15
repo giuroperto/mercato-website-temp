@@ -1,5 +1,6 @@
 {
   "name": "front",
+  "homepage": "http://www.bixiga.com.br/mercato-bixiga",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

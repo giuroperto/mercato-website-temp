@@ -1,7 +1,7 @@
 import React, { useEffect, useState, useContext } from 'react';
-import { FaWhatsapp, FaInstagram } from 'react-icons/fa';
-import { SiIfood } from 'react-icons/si';
-import { HiOutlineMail } from 'react-icons/hi';
+// import { FaWhatsapp, FaInstagram } from 'react-icons/fa';
+// import { SiIfood } from 'react-icons/si';
+// import { HiOutlineMail } from 'react-icons/hi';
 
 import './Bullet.css';
 
@@ -10,6 +10,7 @@ const Bullet = (props) => {
         type: '',
         icon: '',
         color: '',
+        link: '',
     });
 
     switch (props.name) {
@@ -18,6 +19,7 @@ const Bullet = (props) => {
                 type: 'ifood',
                 icon: '<SiIfood className="ifood"/>',
                 color: 'red',
+                link: '',
             });
             break;
         case 'whatsapp':
@@ -25,6 +27,7 @@ const Bullet = (props) => {
                 type: 'whatsapp',
                 icon: '<FaWhatsapp className="whatsapp"/>',
                 color: 'green',
+                link: '',
             });
             break;
         case 'email':
@@ -32,6 +35,7 @@ const Bullet = (props) => {
                 type: 'email',
                 icon: '<HiOutlineMail className="email"/>',
                 color: 'blue',
+                link: '',
             });
             break;
         case 'instagram':
@@ -39,6 +43,7 @@ const Bullet = (props) => {
                 type: 'instagram',
                 icon: '<FaInstagram className="instagram"/>',
                 color: 'pink',
+                link: '',
             });
             break;
     };
