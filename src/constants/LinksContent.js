@@ -1,23 +1,23 @@
 const LINKS = [
   {
     type: 'ifood',
-    icon: '<SiIfood className="ifood"/>',
-    color: 'red',
+    icon: 'SiIfood',
+    class: 'bullet--red',
     link: '',
   }, {
     type: 'whatsapp',
-    icon: '<FaWhatsapp className="whatsapp"/>',
-    color: 'green',
+    icon: 'FaWhatsapp',
+    class: 'bullet--green',
     link: '',
   }, {
     type: 'instagram',
-    icon: '<FaInstagram className="instagram"/>',
-    color: 'pink',
+    icon: 'FaInstagram',
+    class: 'bullet--pink',
     link: '',
   }, {
     type: 'email',
-    icon: '<HiOutlineMail className="email"/>',
-    color: 'blue',
+    icon: 'HiOutlineMail',
+    class: 'bullet--blue',
     link: '',
   },
 ];
