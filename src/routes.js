@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-import ROUTES from './constants/Routes';
-import LINKSCONTENT from './constants/LinksContent';
+import ROUTES from './Components/constants/Routes';
+import LINKSCONTENT from './Components/constants/LinksContent';
 
 // importar componentes da página
 import Navbar from './Components/Navbar/Navbar';
@@ -22,9 +22,9 @@ const Routes = () => {
                 <Switch>
                     <Route path={ROUTES.HOME} exact component={Home} />
                 </Switch>
-                { LINKSCONTENT.map((link) => {
-                    return <Bullet linkData={link}/>
-                })}
+                { LINKSCONTENT.map((link) => (
+                    <Bullet linkData={link}/>
+                ))}
             </Router>
         </div>
     )
