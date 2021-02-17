@@ -2,22 +2,22 @@ const LINKS = [
   {
     type: 'ifood',
     icon: 'SiIfood',
-    class: 'bullet--red',
+    class: 'bullet--ifood',
     link: '',
   }, {
     type: 'whatsapp',
     icon: 'FaWhatsapp',
-    class: 'bullet--green',
+    class: 'bullet--whats',
     link: '',
   }, {
     type: 'instagram',
     icon: 'FaInstagram',
-    class: 'bullet--pink',
+    class: 'bullet--insta',
     link: '',
   }, {
     type: 'email',
     icon: 'HiOutlineMail',
-    class: 'bullet--blue',
+    class: 'bullet--email',
     link: '',
   },
 ];

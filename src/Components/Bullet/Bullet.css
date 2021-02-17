@@ -1,0 +1,32 @@
+.bullet {
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  margin-bottom: 1vh;
+}
+
+.bullet a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.7rem;
+}
+
+.bullet--ifood {
+  background-color: #EA1D2C;
+}
+.bullet--whats {
+  background-color: #25D366;
+}
+.bullet--email {
+  background-color: #4285F4;
+}
+.bullet--insta {
+  background-image: linear-gradient(195deg, #515BD4, #8134AF, #DD2A7B, #F58529, #FEDA77);
+}
+
+/* .icon {
+  position: relative;
+  top: 100px;
+} */

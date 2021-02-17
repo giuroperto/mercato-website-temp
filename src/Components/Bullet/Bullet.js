@@ -30,23 +30,21 @@ const Bullet = (props) => {
         setContent({ ...resetAll });
     }, [props]);
 
-    console.log(content);
-
     return (
-        <div className="bullet">
+        <div className={`bullet ${props.linkData.class}`}>
             <a href={props.linkData.link}>
                 <div className="content">
                     { 
-                        content.ifood && <SiIfood className={`${props.linkData.class}`} /> 
+                        content.ifood && <SiIfood className="icon" /> 
                     }
                     {
-                        content.whatsapp && <FaWhatsapp className={props.linkData.class} />
+                        content.whatsapp && <FaWhatsapp className="icon" />
                     }
                     {
-                        content.instagram && <FaInstagram className={props.linkData.class} />
+                        content.instagram && <FaInstagram className="icon" />
                     }
                     {
-                        content.email && <HiOutlineMail className={props.linkData.class} />
+                        content.email && <HiOutlineMail className="icon" />
                     }
                 </div>
             </a>
@@ -55,13 +53,3 @@ const Bullet = (props) => {
 };
 
 export default Bullet;
-
-//     icon: 'SiIfood',
-//     class: 'bullet--red',
-//     icon: 'FaWhatsapp',
-//     class: 'bullet--green',
-//     icon: 'FaInstagram',
-//     class: 'bullet--pink',
-//     type: 'email',
-//     icon: 'HiOutlineMail',
-//     class: 'bullet--blue',
