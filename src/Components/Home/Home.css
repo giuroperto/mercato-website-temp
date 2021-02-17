@@ -5,11 +5,6 @@
 .home {
     margin: 0 !important;
     padding: 0 !important;
-    /* width: 100vw !important;
-    margin: 0 !important; */
-}
-
-.home {
     background-color: rgb(240, 240, 240);
     min-height: var(--height);
     width: 100vw;
@@ -20,22 +15,25 @@
 
 .home .description p {
     margin: 0;
+    margin-bottom: 5px;
 }
 
 .product-carousel {
-    max-width: 55vw;
+    max-width: 80vw;
 }
 
 .product-carousel h3 {
+    position: relative;
+    top: -9vh;
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 2vh 0;
+    padding: 0.8vh 0;
     border-radius: 1%;
+    font-size: 1.3rem;
 }
 
 .home .description {
-    width: 60%;
-    padding: 5vh 0;
-    font-family: 'Roboto', sans-serif;
+    width: 80%;
+    padding: 3vh 0;
 }
 
 .home .description a span {
@@ -46,4 +44,40 @@
 
 .home .description a {
     text-decoration: none;
+}
+
+@media screen and (min-width: 400px) {
+    .product-carousel h3 {
+        top: -20vh;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .product-carousel h3 {
+        top: -33vh;
+        font-size: 1.7rem;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .product-carousel h3 {
+        top: -48vh;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .product-carousel {
+        max-width: 55vw;
+    }
+    
+    .product-carousel h3 {
+        padding: 2vh 0;
+        top: 0;
+    }
+    
+    .home .description {
+        width: 60%;
+        padding: 4vh 0;
+    }
+    
 }

@@ -32,7 +32,7 @@ const Bullet = (props) => {
 
     return (
         <div className={`bullet ${props.linkData.class}`}>
-            <a href={props.linkData.link}>
+            <a href={props.linkData.link} target="_blank" rel="noopener noreferrer">
                 <div className="content">
                     { 
                         content.ifood && <SiIfood className="icon" /> 

@@ -1,8 +1,6 @@
 import React from 'react';
 import './Home.css';
 
-import { RiWhatsappLine } from "react-icons/ri";
-import { SiIfood } from "react-icons/si";
 import Carousel from 'react-bootstrap/Carousel';
 
 // import { Link } from 'react-router-dom';
@@ -13,7 +11,7 @@ const Home = () => {
         <div className="home">
             <div className="description">
                 <p>Somos o empório virtual do grupo <a href="http://www.emporioroperto.com.br" target="_blank"><span>Roperto</span></a>.</p>
-                <p>Nosso site está em construção, mas você pode saber mais sobre nossos produtos e entregas pelos contatos abaixo.</p>
+                <p>Nosso site está em construção! Enquanto isso, entre em contato para saber mais sobre nossos produtos e entregas.</p>
             </div>
             <div className="product-carousel">
                 <Carousel>
@@ -53,25 +51,8 @@ const Home = () => {
                     </Carousel.Item>
                     </Carousel>
                 </div>
-
-            <div className="contact">
-                <div className="whats">
-                    <RiWhatsappLine className="icon" />
-                    <a href="https://wa.me/5511910505047?text=Olá!%20Estava%20no%20site%20de%20vocês%20e%20gostaria%20de%20uma%20informação..." target="_blank" rel="noopener noreferrer">(11) 91050-5047</a>
-                </div>
-                <div className="email">
-                    <a href="mailto:mercatobixiga@gmail.com">mercatobixiga@gmail.com</a>
-                </div>
-            </div>
     </div>
     )
 }
 
 export default Home;
-
-
-        {/* <Link to="/"><img className="logo" src="https://res.cloudinary.com/dxatyucj2/image/upload/v1599791648/Cantina/Logo_ER_bbhkcq.png" alt="Logo Empório Roperto"/></Link>
-        <Link to='/destaques' className="links-style"><button className="btn-style"><FaStar className="icon"/><span>DESTAQUES</span></button></Link>
-        <Link to='/cardapio' className="links-style"><button className="btn-style"><MdRestaurantMenu className="icon"/><span>CARDÁPIO</span></button></Link>
-        <Link to='/bebidas' className="links-style"><button className="btn-style"><GiBeerBottle className="icon" /><span>BEBIDAS</span></button></Link>
-        <Link to='/vinhos' className="links-style"><button className="btn-style"><FaWineGlassAlt className="icon" /><span>CARTA DE VINHO</span></button></Link> */}
