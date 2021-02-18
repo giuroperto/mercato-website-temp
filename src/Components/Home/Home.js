@@ -10,7 +10,7 @@ const Home = () => {
     return(
         <div className="home">
             <div className="description">
-                <p>Somos o empório virtual do grupo <a href="http://www.emporioroperto.com.br" target="_blank" rel="noopener noreferrer"><span>Roperto</span></a>.</p>
+                <p>Somos o empório virtual do grupo <a href="http://www.emporioroperto.com.br" target="_blank" rel="noopener noreferrer"><span> ROPERTO</span></a>.</p>
                 <p>Nosso site está em construção! Enquanto isso, entre em contato para saber mais sobre nossos produtos e entregas.</p>
             </div>
             <div className="product-carousel">
